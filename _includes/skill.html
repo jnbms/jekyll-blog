@@ -1,0 +1,10 @@
+<div class="resize-tag flex" style=" justify-content: flex-start; margin: 1%; flex-wrap: nowrap;">
+    <div class="resize-sort">{{skill.sort}}</div>
+    <div class="resize-skills flex" style="width: 100%;">
+        {% for i in (0..4) %}
+        {% if skill.names[i] != null %}
+        <div class="tag" style="background-color:{{skill.colors[i]}};">{{skill.names[i]}}</div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

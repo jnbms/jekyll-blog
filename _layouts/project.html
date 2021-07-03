@@ -1,0 +1,18 @@
+---
+layout: page
+---
+<div class="center">
+    <div class="resize-grid" style="display: grid; column-gap: 1%; align-items:flex-start;">
+        {% for i in (0..1) %}
+        <div class class="flex column">
+            {% for post in site.posts %}
+                {% assign index = post.page | modulo: 2 %}
+                    {% if index == i %}
+                        {% include poster.html %}
+                    {% endif %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% include next.html %}

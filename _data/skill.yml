@@ -1,0 +1,23 @@
+- sort: FRONTEND
+  names: ['REACT(REDUX/NEXT)','VUE(VUEX/NUXT)','ANGULAR']
+  colors: ['skyblue','lightgreen','orangered']
+
+- sort: STYLES
+  names: ['MATERIAL-UI','VUETIFY','CSS PREPROCESSOR']
+  colors: ['skyblue','lightgreen','rgb(255, 111, 224)']
+
+- sort: BACKEND
+  names: ['EXPRESS','NEST','SPRING','DJANGO']
+  colors: ['rgb(136, 179, 196)','rgb(214, 41, 29)','rgb(114, 212, 105)','rgb(70, 126, 65)']
+
+- sort: MOBILE
+  names: ['REACT NATIVE','FLUTTER','ANDROID STUDIO']
+  colors: ['skyblue','rgb(47, 129, 206)','lightgreen']
+
+- sort: DATABASAE
+  names: ['MYSQL','MONGODB','GRAPHQL']
+  colors: ['rgb(26, 144, 190)','rgb(115, 194, 118)','rgb(255, 138, 235)']
+
+- sort: ETC
+  names: ['GAME[UNITY]','FIRMWARE(STM32F)']
+  colors: ['darkgray','darkgray']

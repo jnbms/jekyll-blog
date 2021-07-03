@@ -1,0 +1,17 @@
+<div onclick="location.href='{{post.url}}'" class="blog flex row " style="position: relative; height: 400px; margin-bottom: 3%;
+justify-content: center; min-width: 500px">
+    <div class="flex" style="position: relative; height: 100%;
+    justify-content: center; align-items: center; overflow: hidden; border: 1px solid lightgray; right: -2%; top: -2%;">
+        <img src="../assets/images/blogs/{{post.image}}" style="position: relative; height: 100%;">
+    </div>
+        <div class="shadow1 flex column" style=" background-color: white; align-items: center; justify-content: center;height: 100%; width: 100%; margin-right: 2%;">
+            <h1 class="color3">{{post.title}}</h1>
+            <div class="nomal color3">{{post.subtitle}}</div>
+            <div class="light color1" style="text-align: center; width: 100%;">"{{post.coment}}"</div>
+            <div class="flex" style="font-size: 20px; justify-content: space-evenly; width: 80%;">
+            {% for tag in post.hashtag %}
+            <div class="color4">#{{tag}}</div>
+            {% endfor %}
+            </div>
+        </div>
+</div>

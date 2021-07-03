@@ -1,0 +1,10 @@
+---
+layout: page
+---
+<div class="flex column" style="width: 100%; align-items: center; margin-top: 2%;">
+    {% for post in site.posts %}
+        {% if post.cartegory == 'BLOG' %}
+            {% include bloger.html %}
+        {% endif %}
+    {% endfor %}
+</div>
