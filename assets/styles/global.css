@@ -86,30 +86,38 @@
 /*  */
 
 /* PC 화면일 때를 기본으로 */
-
+.resize{width: var(--pc);}
 .resize-profile{width: var(--pc);}
 .resize-grid{ width: var(--pc); grid-template-columns: 1fr 1fr;}
-.resize-text{width: 60%;}
+.resize-text{width: 55%;}
+.resize-bloger{width: 70%;}
 .resize-sort{width: 20%;}
 .resize-skills{justify-content: flex-start;}
-
+.resize-postImage{width: var(--pc);}
 /*  */
+
 @media(max-width: 768px){
+    .resize{width: var(--tablet);}
     .resize-profile{width: var(--tablet); flex-direction: column; text-align: center;}
     .resize-grid{width: var(--tablet); grid-template-columns: 1fr;}
+    .resize-bloger{width: var(--tablet);}
     .resize-text{width: 100%;}
     .resize-tag{flex-direction: column;}
     .resize-sort{width: 100%;}
     .resize-skills{justify-content: center;}
+    .resize-postImage{width: var(--tablet);}
 }
 @media(max-width: 425px){
+    .resize{width: var(--mobile);}
+    .resize-bloger{width: var(--mobile);}
     .resize-profile{width: var(--mobile); flex-direction: column; text-align: center;}
     .resize-grid{grid-template-columns: 1fr; width: var(--mobile);}
     .resize-text{width: 100%;}
+    .resize-postImage{width: var(--mobile);}
     .resize-head{justify-content:center;}
     .resize-tag{flex-direction: column;}
     .resize-sort{width: 100%;}
     .resize-skills{justify-content: center;}
 }
-
+@media(min-width: 1024px){.resize-profile{width: 70%;}}
 
