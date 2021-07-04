@@ -32,12 +32,15 @@
     --color3 : #334E70;
     --color4 : #4fc5b9;
     --color5 : #9eeffd;
+    /* resize  */
+    --pc: 90%;
+    --tablet: 80%;
+    --mobile: 100%;
 }
-@media screen {
-    html{
-    }
+/* 기본 설정 */
     body{
         margin: 0;
+        font-size: 12px;
         font-family: Cairo,BM,YES;
         font-weight: normal;
         background-color: var(--color0);
@@ -80,33 +83,33 @@
     .post:hover > .post-text{opacity: 1;}    
     .blog{transition: 0.1s;}
     .blog:hover{transform: scale(1.1);}
-}
-/* PC */
-@media screen and (min-width: 1201px) {
-    /* body{color: orange;} */
-    .resize-profile{width: 80%;}
-    .resize-text{width: 60%;}
-    .resize-sort{width: 20%;}
-    .resize-skills{justify-content: flex-start;}
-    .resize-grid{grid-template-columns: 1fr 1fr; width: 80%;};
-    
-/* MOBILE */
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    .resize-profile{width: 70%;flex-direction: column; text-align: center;}
+/*  */
+
+/* PC 화면일 때를 기본으로 */
+
+.resize-profile{width: var(--pc);}
+.resize-grid{ width: var(--pc); grid-template-columns: 1fr 1fr;}
+.resize-text{width: 60%;}
+.resize-sort{width: 20%;}
+.resize-skills{justify-content: flex-start;}
+
+/*  */
+@media(max-width: 768px){
+    .resize-profile{width: var(--tablet); flex-direction: column; text-align: center;}
+    .resize-grid{width: var(--tablet); grid-template-columns: 1fr;}
     .resize-text{width: 100%;}
     .resize-tag{flex-direction: column;}
     .resize-sort{width: 100%;}
     .resize-skills{justify-content: center;}
-    .resize-grid{grid-template-columns: 1fr; width: 80%;};
 }
-/* PHONE */
-@media screen and (max-width: 768px) { 
-    .resize-profile{width: 100%; flex-direction: column; text-align: center;}
-    .resize-head{justify-content:stretch;}
-    .resize-tag{flex-direction: column;}
+@media(max-width: 425px){
+    .resize-profile{width: var(--mobile); flex-direction: column; text-align: center;}
+    .resize-grid{grid-template-columns: 1fr; width: var(--mobile);}
     .resize-text{width: 100%;}
+    .resize-head{justify-content:center;}
+    .resize-tag{flex-direction: column;}
     .resize-sort{width: 100%;}
     .resize-skills{justify-content: center;}
-    .resize-grid{grid-template-columns: 1fr; width: 100%;};
 }
+
+

@@ -1,7 +1,7 @@
 {% assign dir = post.path | split: "/" | first %}
 {% if  dir == "_posts" %}
 <div class="center post shadow1" onclick="location.href='{{post.url}}'" style="position: relative; width: 100%; height: 100%; z-index: 2; margin-bottom: 2%;">
-    <div class="post-text flex column" style="width: 80%; position: absolute; align-items: center; text-align: center; z-index:1;">
+    <div class="post-text flex column" style=" width: 80%; position: absolute; align-items: center; text-align: center; z-index:1;">
         <h1 class="color4">{{post.title}}</h1>
         <h3 class="color0" style="margin: 3%;">{{post.subtitle}}</h3>
         <h5 class="color0">"{{post.coment}}"</h5>
