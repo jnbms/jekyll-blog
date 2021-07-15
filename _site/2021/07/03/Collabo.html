@@ -17,18 +17,31 @@
     <div class="flex column" style="justify-content: center;">
     <div class="center" style="width: 100%;">
         <h1 class="color1">프로젝트 : 콜라보(COLLABO)</h1>
-        <img src="\assets\images\projects\collabo\1.png" class="resize-postImage" style="width: 60%;"/>
+        <img src="\assets\images\projects/um.gif" class="resize-postImage" style="margin: 10px;"/>
+        <div>page.js없이 캐러쉘 원리를 이해하여 라우트 없이 PWA 페이지를 만드려고 노력했습니다.</div>
+        <div>페이지들에 사용된 피아노와 드럼패드는 컴포넌트로 제작되어 작곡시 모듈처럼 가져오록 결합도를 낮췄습니다.</div>
+        <div>전체적인 UI 스타일은 트렌드한 neumorphism를 적용했습니다.</div>
+        <div> </div>
+        <img src="\assets\images\projects\collabo\1.png" class="resize-postImage"/>
         <H3 class="color3" onclick='location.href="https://angry-mestorf-ee27a7.netlify.app"'>"위의 프로젝트로 이동하기"</H3>
+        <div style="color: grey;">(해당 프로젝트는 반응형 웹이 아직 구현되지 않았습니다.)</div>
     </div>
     <div class="center" style="width: 100%;">
     <div class="flex column" style="width: 50%">
         <div>목적 : 웹페이지에서 작곡가들의 협업</div>
+        <div> 웹 디자이너들에겐 FIGMA를 통해 협업을 할 수 있지만 작곡가들에겐 아직 제공된 기술이 현업에 부족합니다.</div>
+        <div> 작곡에도 스케치 개념이 있고 디자이너처럼 아이디어가 중요하고 몇 줄의 시작으로 창작 시간이 현저히 줄 수 있기 때문에</div>
+        <div> 이 툴이 필요하다고 생각하여 학원 프로젝트로 작업을 시작했습니다.</div>
         <div> 사용된 기술 : REACT / TONE.JS </div>
         <div> 추가할 내용 : </div>
         <div>Socket.io 를 통해 작곡가들의 실시간 소통</div>
         <div>미디어쿼리를 적용한 반응형 웹</div>
         <div>스타일링 : </div>
         <div> UX/UI 트렌드인 neumorphism 적용 </div>
+
+    <h3 style="color: rgb(106, 163, 255);">리액트를 선택한 이유</h3>
+    <div>피아노나 드럼패드 등을 구현하기 위해서 리액트의 합성 기술을 통하여 음정을 배열로 작성하고
+        MAP 메소드를 통해 피아노와 드럼과 같은 반복적인 이미지를 컴팩트하게 구현했습니다.</div>
     </div>
     </div>
 </div>
@@ -36,9 +49,11 @@
 <div>
 <div style="padding: 1%;">
     콜라보는 온라인 실시간 작곡 협업 서비스를 주제로 제작중인 프로젝트 입니다.</div>
-    <img src="\assets\images\projects\collabo\2.png" width="80%"/>
+    <img src="\assets\images\projects\collabo\2.png" class="resize-postImage"/>
     <div class="color1">"인터렉티브한 화면 전환"</div>
     <div>캐러셀 슬라이드 방식으로 화면을 전환하여 라우팅 없이 페이지를 이동할 수 있습니다.</div>
+    <div>핀터레스트을 참고하여 웹페이지만 애니메이션을 추가하여 어플리케이션과 같은 UX 경험을 주기를 시도했습니다.</div>
+    <div>위의 사진은 드럼 패드이고 키보드 입력이나 클릭을 통해 저장된 샘플러를 재생할 수 있습니다.</div>
 </div>
 </div>
 </div>

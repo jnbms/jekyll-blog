@@ -93,7 +93,7 @@
 .resize-bloger{width: 70%;}
 .resize-sort{width: 20%;}
 .resize-skills{justify-content: flex-start;}
-.resize-postImage{width: 60%;}
+.resize-postImage{width: 50%;}
 /*  */
 
 @media(max-width: 768px){
