@@ -1,8 +1,8 @@
-<div onclick="location.href='{{post.url}}'" class="resize-bloger blog flex row " style=" position: relative; height: 300px; margin-bottom: 3%;
+<div onclick="location.href='{{site.baseurl}}/{{post.url}}'" class="resize-bloger blog flex row " style=" position: relative; height: 300px; margin-bottom: 3%;
 justify-content: center;">
     <div class="flex" style="position: relative; height: 100%;
     justify-content: center; align-items: center; overflow: hidden; border: 1px solid lightgray; right: -2%; top: -2%;">
-        <img src="../assets/images/blogs/{{post.image}}" style="position: relative; height: 100%;">
+        <img src="{{site.baseurl}}/assets/images/blogs/{{post.image}}" style="position: relative; height: 100%;">
     </div>
         <div class="shadow1 flex column" style=" background-color: white; align-items: center; justify-content: center;height: 100%; width: 100%; margin-right: 2%;">
             <h1 class="color3">{{post.title}}</h1>
