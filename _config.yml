@@ -1,4 +1,5 @@
 baseurl             : /jekyll
+url                 : https://jnbms.github.io/
 source              : .
 destination         : ./_site
 collections_dir     : .
